@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TunisiaDrive Academy | École de Conduite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="nav">
+      <div class="brand">
+        <div class="brand-mark">TD</div>
+        <div class="brand-text">
+          <span data-lang-key="brand">TunisiaDrive Academy</span>
+          <small data-lang-key="brand_sub">École de conduite | مدرسة تعليم السياقة</small>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#home" data-lang-key="nav_home">Home</a>
+        <a href="#about" data-lang-key="nav_about">About</a>
+        <a href="#services" data-lang-key="nav_services">Services</a>
+        <a href="#booking" data-lang-key="nav_booking">Booking</a>
+        <a href="#prices" data-lang-key="nav_prices">Prices</a>
+        <a href="#learning" data-lang-key="nav_learning">Resources</a>
+        <a href="#contact" data-lang-key="nav_contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <select id="language-select" aria-label="Language">
+          <option value="en">English</option>
+          <option value="fr">Français</option>
+          <option value="ar">العربية</option>
+        </select>
+        <a class="btn ghost" href="#booking" data-lang-key="nav_cta">Book now</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="pill" data-lang-key="hero_badge">Based in Tunisia • Safe & modern driving</p>
+        <h1 data-lang-key="hero_title">Drive with confidence, drive with safety.</h1>
+        <p class="lead" data-lang-key="hero_sub">
+          Modern lessons, certified instructors, and smart planning to get you test-ready faster.
+        </p>
+        <div class="cta-group">
+          <a class="btn primary" href="#booking" data-lang-key="cta_book">Book now</a>
+          <a class="btn secondary" href="#contact" data-lang-key="cta_contact">Contact us</a>
+          <a class="btn ghost" href="#prices" data-lang-key="cta_prices">View prices</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <strong>98%</strong>
+            <span data-lang-key="stat_success">Exam success rate</span>
+          </div>
+          <div>
+            <strong>1.2k</strong>
+            <span data-lang-key="stat_students">Students trained</span>
+          </div>
+          <div>
+            <strong>3</strong>
+            <span data-lang-key="stat_languages">Languages: AR / FR / EN</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="car-stack">
+          <figure class="car-card">
+            <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80" alt="Driving school car" />
+            <figcaption>
+              <span data-lang-key="hero_car1_title">Practice in comfort</span>
+              <small data-lang-key="hero_car1_sub">Dual control, fully insured</small>
+            </figcaption>
+          </figure>
+          <figure class="car-card overlay">
+            <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80" alt="Driving on the road" />
+            <figcaption>
+              <span data-lang-key="hero_car2_title">Master every road</span>
+              <small data-lang-key="hero_car2_sub">City • Highway • Night</small>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="badge-grid">
+          <div class="badge">
+            <span>✓</span>
+            <p data-lang-key="badge_cert">Certified & licensed instructors</p>
+          </div>
+          <div class="badge">
+            <span>✓</span>
+            <p data-lang-key="badge_schedule">Flexible scheduling</p>
+          </div>
+          <div class="badge">
+            <span>✓</span>
+            <p data-lang-key="badge_payment">Secure online payments</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="section-header">
+        <p class="eyebrow" data-lang-key="about_label">Who we are</p>
+        <h2 data-lang-key="about_title">Driving excellence across Tunisia.</h2>
+        <p data-lang-key="about_text">
+          TunisiaDrive Academy blends local expertise with modern training. From your first start to your exam day,
+          we guide you with structured lessons, real feedback, and professional safety standards.
+        </p>
+      </div>
+      <div class="about-grid">
+        <div class="card">
+          <h3 data-lang-key="about_history_title">Our story</h3>
+          <p data-lang-key="about_history_text">
+            Founded in 2010 in Tunis, now serving students nationwide with urban, coastal, and highway programs.
+          </p>
+          <ul>
+            <li>ISO-certified processes</li>
+            <li>Partnered exam centers</li>
+            <li>Modern dual-control fleet</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 data-lang-key="about_mission_title">Mission & values</h3>
+          <p data-lang-key="about_mission_text">
+            Safety, professionalism, and measurable success are at the heart of every lesson.
+          </p>
+          <div class="chips">
+            <span data-lang-key="chip_safety">Safety first</span>
+            <span data-lang-key="chip_prof">Professional coaching</span>
+            <span data-lang-key="chip_success">High success rate</span>
+          </div>
+        </div>
+        <div class="card instructors">
+          <h3 data-lang-key="about_team_title">Certified instructors</h3>
+          <div class="instructor-list">
+            <div class="instructor">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=300&q=80" alt="Instructor Amine" />
+              <div>
+                <strong>Amine</strong>
+                <p data-lang-key="about_instr1">10 yrs experience • Manual</p>
+              </div>
+            </div>
+            <div class="instructor">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=300&q=80&sat=-40" alt="Instructor Leila" />
+              <div>
+                <strong>Leila</strong>
+                <p data-lang-key="about_instr2">Highway & night driving</p>
+              </div>
+            </div>
+            <div class="instructor">
+              <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=300&q=80" alt="Instructor Sami" />
+              <div>
+                <strong>Sami</strong>
+                <p data-lang-key="about_instr3">Theory & exam coaching</p>
+              </div>
+            </div>
+          </div>
+          <p class="small" data-lang-key="about_certs">
+            Licensed by the Tunisian Ministry of Transport • Defensive driving certified • First-aid trained
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section tinted">
+      <div class="section-header">
+        <p class="eyebrow" data-lang-key="services_label">Programs</p>
+        <h2 data-lang-key="services_title">Services built for every driver.</h2>
+      </div>
+      <div class="service-grid">
+        <article class="card">
+          <h3 data-lang-key="svc_manual">Manual & automatic lessons</h3>
+          <p data-lang-key="svc_manual_desc">Adapted to your preference with dual-control vehicles.</p>
+        </article>
+        <article class="card">
+          <h3 data-lang-key="svc_intensive">Intensive classes</h3>
+          <p data-lang-key="svc_intensive_desc">Accelerated paths with daily practice for faster readiness.</p>
+        </article>
+        <article class="card">
+          <h3 data-lang-key="svc_night">Night driving training</h3>
+          <p data-lang-key="svc_night_desc">Master visibility, headlights etiquette, and fatigue control.</p>
+        </article>
+        <article class="card">
+          <h3 data-lang-key="svc_highway">Highway practice</h3>
+          <p data-lang-key="svc_highway_desc">On-ramp, overtaking, and speed management with experts.</p>
+        </article>
+        <article class="card">
+          <h3 data-lang-key="svc_parking">Parking practice</h3>
+          <p data-lang-key="svc_parking_desc">Parallel, bay, and hill-start drills until you’re confident.</p>
+        </article>
+        <article class="card">
+          <h3 data-lang-key="svc_exam">Exam preparation</h3>
+          <p data-lang-key="svc_exam_desc">Theory + practical simulations with official marking criteria.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="booking" class="section">
+      <div class="section-header">
+        <p class="eyebrow" data-lang-key="booking_label">Booking & scheduling</p>
+        <h2 data-lang-key="booking_title">Book online, pick an instructor, and pay securely.</h2>
+        <p data-lang-key="booking_text">
+          Reserve lessons, choose manual or automatic, and manage your schedule from one place.
+        </p>
+      </div>
+      <div class="booking-grid">
+        <form class="card form" id="booking-form">
+          <div class="form-row">
+            <label for="lesson-type" data-lang-key="form_lesson">Lesson type</label>
+            <select id="lesson-type" required>
+              <option data-lang-key="opt_manual1">Manual - 1h</option>
+              <option data-lang-key="opt_manual2">Manual - 2h</option>
+              <option data-lang-key="opt_auto1">Automatic - 1h</option>
+              <option data-lang-key="opt_auto2">Automatic - 2h</option>
+              <option data-lang-key="opt_intensive">Intensive (10h week)</option>
+              <option data-lang-key="opt_exam_pack">Exam package</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="instructor" data-lang-key="form_instructor">Reserve your instructor</label>
+            <select id="instructor" required>
+              <option>Amine</option>
+              <option>Leila</option>
+              <option>Sami</option>
+            </select>
+          </div>
+          <div class="form-row two">
+            <div>
+              <label for="date" data-lang-key="form_date">Choose date</label>
+              <input id="date" type="date" required />
+            </div>
+            <div>
+              <label for="time" data-lang-key="form_time">Choose time</label>
+              <input id="time" type="time" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="package" data-lang-key="form_package">Package</label>
+            <select id="package">
+              <option data-lang-key="opt_single">Single session</option>
+              <option data-lang-key="opt_5h">5h pack</option>
+              <option data-lang-key="opt_10h">10h pack</option>
+              <option data-lang-key="opt_20h">20h mastery</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="payment" data-lang-key="form_payment">Secure payment</label>
+            <select id="payment" required>
+              <option data-lang-key="opt_card">Credit / Debit</option>
+              <option data-lang-key="opt_transfer">Instant transfer</option>
+              <option data-lang-key="opt_cash">Cash at office</option>
+            </select>
+          </div>
+          <button type="submit" class="btn primary full" data-lang-key="form_submit">Confirm booking</button>
+        </form>
+
+        <div class="card booking-side">
+          <h3 data-lang-key="student_area_title">Student area</h3>
+          <p data-lang-key="student_area_text">Log in to view your schedule, progress, and exam documents.</p>
+          <form class="mini-form" id="login-form">
+            <input type="email" data-placeholder-key="ph_email" placeholder="Email" required />
+            <input type="password" data-placeholder-key="ph_password" placeholder="Password" required />
+            <button class="btn secondary full" type="submit" data-lang-key="login_btn">Student login</button>
+          </form>
+          <div class="progress">
+            <div class="progress-header">
+              <span data-lang-key="progress_label">Progress tracking</span>
+              <span id="progress-value">65%</span>
+            </div>
+            <div class="progress-bar"><span style="width:65%"></span></div>
+            <ul class="progress-items">
+              <li data-lang-key="prog_item1">✔ Theory modules: 80%</li>
+              <li data-lang-key="prog_item2">✔ City driving: 70%</li>
+              <li data-lang-key="prog_item3">• Parking drills: 50%</li>
+            </ul>
+          </div>
+          <div class="notifications">
+            <h4 data-lang-key="notif_label">Upcoming lessons</h4>
+            <ul id="notifications-list">
+              <li data-lang-key="notif_item1">Tue 10:00 — Manual with Amine</li>
+              <li data-lang-key="notif_item2">Thu 18:00 — Night driving with Leila</li>
+              <li data-lang-key="notif_item3">Sat 09:00 — Exam simulation with Sami</li>
+            </ul>
+          </div>
+          <div class="docs">
+            <h4 data-lang-key="docs_label">Exam documents</h4>
+            <ul>
+              <li><a href="#" data-lang-key="doc_item1">Theory mock results (PDF)</a></li>
+              <li><a href="#" data-lang-key="doc_item2">Practical checklist</a></li>
+              <li><a href="#" data-lang-key="doc_item3">Insurance & license copies</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prices" class="section tinted">
+      <div class="section-header">
+        <p class="eyebrow" data-lang-key="prices_label">Pricing</p>
+        <h2 data-lang-key="prices_title">Transparent prices and flexible packs.</h2>
+      </div>
+      <div class="price-grid">
+        <div class="card price-card">
+          <div class="tag" data-lang-key="price_hourly">Price per hour</div>
+          <h3>50 TND</h3>
+          <p data-lang-key="price_hour_desc">Manual or automatic • Car included</p>
+          <a class="btn ghost full" href="#booking" data-lang-key="price_cta">Book a slot</a>
+        </div>
+        <div class="card price-card">
+          <div class="tag" data-lang-key="price_packages">Packages</div>
+          <ul>
+            <li>5h — 230 TND</li>
+            <li>10h — 440 TND</li>
+            <li>20h — 820 TND</li>
+          </ul>
+          <p data-lang-key="price_package_text">Ideal for steady progress with savings.</p>
+        </div>
+        <div class="card price-card">
+          <div class="tag" data-lang-key="price_exam">Exam packages</div>
+          <ul>
+            <li data-lang-key="price_exam1">Mock exam + feedback</li>
+            <li data-lang-key="price_exam2">Exam day car + coach</li>
+            <li data-lang-key="price_exam3">Paperwork & scheduling help</li>
+          </ul>
+        </div>
+        <div class="card price-card highlight">
+          <div class="tag" data-lang-key="price_discounts">Discounts</div>
+          <ul>
+            <li data-lang-key="disc_student">Student discount -10%</li>
+            <li data-lang-key="disc_group">Group discount -15%</li>
+            <li data-lang-key="disc_friend">Bring-a-friend bonus ride</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="learning" class="section">
+      <div class="section-header">
+        <p class="eyebrow" data-lang-key="learning_label">Learning resources</p>
+        <h2 data-lang-key="learning_title">Theory, practice, and tips all in one place.</h2>
+      </div>
+      <div class="learning-grid">
+        <div class="card">
+          <h3 data-lang-key="learn_theory">Theory test materials</h3>
+          <ul>
+            <li data-lang-key="learn_signs">Traffic signs explanations</li>
+            <li data-lang-key="learn_rules">Road rules in Tunisia</li>
+            <li data-lang-key="learn_pdfs">Downloadable PDFs</li>
+          </ul>
+          <div class="tips">
+            <h4 data-lang-key="learn_tips">Driving tips</h4>
+            <ul>
+              <li data-lang-key="tip_parallel">How to parallel park</li>
+              <li data-lang-key="tip_roundabout">Managing roundabouts</li>
+              <li data-lang-key="tip_hill">Hill start basics</li>
+              <li data-lang-key="tip_mistakes">Beginner mistakes to avoid</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <h3 data-lang-key="learn_quiz">Practice quizzes</h3>
+          <p data-lang-key="learn_quiz_desc">MCQs with instant feedback and timed mock exams.</p>
+          <button class="btn secondary full" type="button" data-lang-key="learn_quiz_btn">Start a mock exam</button>
+          <div class="resources">
+            <a href="#" data-lang-key="quiz1">Quiz 1 — Road rules</a>
+            <a href="#" data-lang-key="quiz2">Quiz 2 — Signs & markings</a>
+            <a href="#" data-lang-key="quiz3">Mock exam — 40 questions</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3 data-lang-key="learn_videos">Video tutorials</h3>
+          <div class="video-grid">
+            <iframe src="https://www.youtube.com/embed/t5rGzKU8euU" title="Parking tutorial" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/YxZ0A9cJkS8" title="Road signs" allowfullscreen></iframe>
+          </div>
+          <p data-lang-key="learn_advice">Instructor advice and visual explanations for maneuvers.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="student" class="section tinted">
+      <div class="section-header">
+        <p class="eyebrow" data-lang-key="student_label">Student area</p>
+        <h2 data-lang-key="student_title">Track progress, notifications, and results.</h2>
+      </div>
+      <div class="student-grid">
+        <div class="card">
+          <h3 data-lang-key="student_progress">Progress tracker</h3>
+          <p data-lang-key="student_progress_desc">See your completion by category and upcoming milestones.</p>
+          <div class="progress-bar"><span style="width:75%"></span></div>
+          <ul class="progress-items">
+            <li data-lang-key="stud_prog1">Roundabouts: 80%</li>
+            <li data-lang-key="stud_prog2">Parking: 70%</li>
+            <li data-lang-key="stud_prog3">Highway: 65%</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 data-lang-key="student_notifications">Notifications</h3>
+          <p data-lang-key="student_notifications_desc">Reminders for lessons and exam dates.</p>
+          <ul class="notifications">
+            <li data-lang-key="stud_notif1">Lesson tomorrow at 09:00</li>
+            <li data-lang-key="stud_notif2">Mock theory on Friday</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 data-lang-key="student_results">Practice results</h3>
+          <p data-lang-key="student_results_desc">Theory test performance and downloadable reports.</p>
+          <ul>
+            <li data-lang-key="stud_res1">Last mock: 36 / 40 (90%)</li>
+            <li data-lang-key="stud_res2">Average reaction time: 1.1s</li>
+            <li><a href="#" data-lang-key="stud_res3">Download results (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <div class="section-header">
+        <p class="eyebrow" data-lang-key="test_label">Testimonials</p>
+        <h2 data-lang-key="test_title">Success stories from our students.</h2>
+      </div>
+      <div class="testimonial-grid">
+        <div class="card testimonial">
+          <div class="rating">★★★★★</div>
+          <p data-lang-key="test1_text">“Passed on my first try! Night driving sessions were a game changer.”</p>
+          <div class="student-info">
+            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=200&q=80" alt="Graduate" />
+            <div>
+              <strong>Sarra</strong>
+              <small data-lang-key="test1_meta">Exam passed • Tunis</small>
+            </div>
+          </div>
+        </div>
+        <div class="card testimonial">
+          <div class="rating">★★★★☆</div>
+          <p data-lang-key="test2_text">“Loved the clear feedback after each mock exam. Great instructors.”</p>
+          <div class="student-info">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=200&q=80" alt="Graduate" />
+            <div>
+              <strong>Karim</strong>
+              <small data-lang-key="test2_meta">Automatic license • Sousse</small>
+            </div>
+          </div>
+        </div>
+        <div class="card testimonial">
+          <div class="rating">★★★★★</div>
+          <p data-lang-key="test3_text">“Highway and parking practice were spot on. Scheduling was easy.”</p>
+          <div class="student-info">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80" alt="Graduate" />
+            <div>
+              <strong>Houssem</strong>
+              <small data-lang-key="test3_meta">Manual license • Sfax</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="section tinted">
+      <div class="section-header">
+        <p class="eyebrow" data-lang-key="blog_label">Blog ideas</p>
+        <h2 data-lang-key="blog_title">Guides for confident drivers.</h2>
+      </div>
+      <div class="blog-grid">
+        <article class="card">
+          <h3 data-lang-key="blog1_title">How to pass your driving test on the first try</h3>
+          <p data-lang-key="blog1_desc">Preparation checklist, examiner expectations, and mindset tips.</p>
+        </article>
+        <article class="card">
+          <h3 data-lang-key="blog2_title">Tips for nervous drivers</h3>
+          <p data-lang-key="blog2_desc">Breathing, scenario practice, and building confidence step by step.</p>
+        </article>
+        <article class="card">
+          <h3 data-lang-key="blog3_title">Difference between manual & automatic driving</h3>
+          <p data-lang-key="blog3_desc">Pros, cons, and how to decide based on your goals in Tunisia.</p>
+        </article>
+        <article class="card">
+          <h3 data-lang-key="blog4_title">How to choose a driving instructor</h3>
+          <p data-lang-key="blog4_desc">Credentials to verify and questions to ask before you book.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="section-header">
+        <p class="eyebrow" data-lang-key="faq_label">FAQs & policies</p>
+        <h2 data-lang-key="faq_title">Everything you need to know.</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="card">
+          <h3 data-lang-key="faq_q1">What cars do you use?</h3>
+          <p data-lang-key="faq_a1">Modern dual-control vehicles, manual and automatic, fully insured.</p>
+        </div>
+        <div class="card">
+          <h3 data-lang-key="faq_q2">Do you offer multilingual lessons?</h3>
+          <p data-lang-key="faq_a2">Yes: Arabic, French, and English — select your preference when booking.</p>
+        </div>
+        <div class="card">
+          <h3 data-lang-key="faq_q3">Refund policy</h3>
+          <p data-lang-key="faq_a3">48h notice for cancellations. Unused packages are refundable minus admin fees.</p>
+        </div>
+        <div class="card">
+          <h3 data-lang-key="faq_q4">Terms & conditions</h3>
+          <p data-lang-key="faq_a4">Safe behavior required; valid ID needed; payments secured via SSL.</p>
+        </div>
+        <div class="card">
+          <h3 data-lang-key="faq_q5">Live chat support</h3>
+          <p data-lang-key="faq_a5">Chat with us for scheduling, payments, or quick driving tips.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section tinted">
+      <div class="section-header">
+        <p class="eyebrow" data-lang-key="contact_label">Contact & location</p>
+        <h2 data-lang-key="contact_title">Reach us, visit us, or chat instantly.</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="card">
+          <form class="form" id="contact-form">
+            <div class="form-row">
+              <label for="contact-name" data-lang-key="contact_name">Your name</label>
+              <input id="contact-name" type="text" data-placeholder-key="ph_name" placeholder="Full name" required />
+            </div>
+            <div class="form-row">
+              <label for="contact-email">Email</label>
+              <input id="contact-email" type="email" data-placeholder-key="ph_contact_email" placeholder="you@email.com" required />
+            </div>
+            <div class="form-row">
+              <label for="contact-message" data-lang-key="contact_message">Message</label>
+              <textarea id="contact-message" rows="4" data-placeholder-key="ph_message" placeholder="How can we help?" required></textarea>
+            </div>
+            <button class="btn primary full" type="submit" data-lang-key="contact_send">Send message</button>
+          </form>
+          <div class="whatsapp">
+            <a class="btn secondary full" href="https://wa.me/21600000000" target="_blank" rel="noreferrer">
+              <span data-lang-key="whatsapp_btn">WhatsApp us</span>
+            </a>
+          </div>
+          <div class="hours">
+            <h4 data-lang-key="contact_hours">Working hours</h4>
+            <p data-lang-key="contact_hours_text">Mon–Fri: 08:00–19:00 • Sat: 09:00–14:00</p>
+          </div>
+        </div>
+        <div class="card map-card">
+          <iframe
+            title="TunisiaDrive location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.976606487142!2d10.180!3d36.806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMzfCsDQ4JzIxLjYiTiAxMMKwMTAnNDguMCJF!5e0!3m2!1sen!2stn!4v0000000000"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="contact-info">
+            <p><strong data-lang-key="contact_location">Tunis center</strong></p>
+            <p data-lang-key="contact_phone">+216 00 000 000</p>
+            <p data-lang-key="contact_email">info@tunisiadrive.tn</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <div class="brand-mark">TD</div>
+      <p data-lang-key="footer_text">Ready to drive with confidence? Book your first lesson today.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#faq" data-lang-key="footer_terms">Terms & conditions</a>
+      <a href="#faq" data-lang-key="footer_refund">Refund policy</a>
+      <a href="#contact" data-lang-key="footer_support">Live chat & support</a>
+    </div>
+    <button class="btn secondary" id="chat-toggle" type="button" data-lang-key="chat_toggle">Live chat</button>
+  </footer>
+
+  <div class="chat-widget" id="chat-widget" aria-live="polite">
+    <div class="chat-header">
+      <div>
+        <strong data-lang-key="chat_title">Live Support</strong>
+        <small data-lang-key="chat_sub">Typically replies in 2 minutes</small>
+      </div>
+      <button type="button" id="chat-close">×</button>
+    </div>
+    <div class="chat-body" id="chat-body">
+      <div class="chat-message bot" data-lang-key="chat_welcome">Hi! Need help booking or understanding the exam?</div>
+    </div>
+    <form class="chat-input" id="chat-form">
+      <input type="text" id="chat-text" data-placeholder-key="ph_chat" placeholder="Type your question..." required />
+      <button type="submit" data-lang-key="chat_send">Send</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
